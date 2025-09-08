@@ -1,5 +1,20 @@
 body{
     margin: 0px auto;
+    font-family: sans-serif;
+    font-size: 16px; /* 1em */
     border: 1px solid red;
     max-width: 1024px;
+}
+
+header{
+    background: #D1E3EE;
+}
+
+#logo{
+    margin-top: -150px;
+}
+
+header nav ul li{
+    border: 1px solid red;
+    display: inline-block;
 }
