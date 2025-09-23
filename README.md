@@ -8,6 +8,6 @@ Practica 01 - Terminada
 
 Practica 02 - hecho html falta el footer en el css
 
+Practica 03 - Falta hacer el css en clase
 
-
-Actualizacion dia lunes 11 Septiembre 2025
+Actualizacion martes 23 de Septiembre 2025 antes de la clase
