@@ -1,0 +1,128 @@
+/* ======== ETIQUETAS ======== */
+h1 {
+  text-align: left;
+  font-size: 35px;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-family: sans-serif;
+}
+
+/* ======== IDs ======== */
+#sectionIzquierda {
+  width: 60%;
+  float: left;
+}
+
+#sectionDerecha {
+  width: 30%;
+}
+
+#copyright {
+  text-align: center;        /* Centrado */
+  font-family: "Georgia", serif; /* Tipografía elegante */
+  font-size: 14px;           /* Tamaño de letra */
+  color: #333;               /* Color gris oscuro */
+  margin-top: 20px;          /* Separación con el contenido */
+}
+
+/* ======== CLASES ======== */
+.dotted-divider {
+  /* Resetear el borde por defecto y darle altura cero */
+  border-bottom: 2px dashed black; /* grosor, estilo, color */
+  width: 100%;                     /* Asegurar que ocupe todo el ancho */
+  margin: 45px 0;                 /* margen arriba y abajo */
+}
+
+.colorverde {
+  color: green;
+}
+
+.iconos{
+     /* Usa Flexbox para alinear los elementos horizontalmente */
+    display: flex; 
+    /* Coloca los elementos al final del contenedor */
+    justify-content: flex-end; 
+    /* Centra los elementos verticalmente */
+    align-items: center; 
+}
+
+
+/* ======== SELECTORES COMPUESTOS ======== */
+header nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+  color: black;
+}
+
+/* Estilos generales del footer */
+footer {
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    color: #555;
+    text-align: left;
+    background-color: #f7f7f7;
+}
+
+/* Contenedor de las columnas */
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos de cada columna (aplica tanto a <div> como a <article>) */
+.footer-column {
+    flex-basis: 20%;
+}
+
+/* Estilos de los títulos */
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Línea horizontal bajo los títulos usando un pseudo-elemento */
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Estilos de la lista de elementos (texto ahora en <li>) */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Aplicamos los estilos de texto directamente al <li> */
+.footer-column ul li {
+    margin-bottom: 8px; 
+    color: #555; /* Color del texto */
+    font-size: 13px; /* Tamaño del texto */
+}
+
+/* NOTA: Se eliminaron los estilos para .footer-column ul li a y :hover */
+
+
+/* Estilos para el texto del Newsletter */
+.footer-column p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555;
+}
+
+/*porque se puso tanto padding y margen en todo?*/
+.header{
+    position: relative;
+}
