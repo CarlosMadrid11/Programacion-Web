@@ -147,3 +147,15 @@ main {
   position: relative;
   margin-left: -40px;
 }
+
+#go_to_shop {
+    position: absolute;
+    top: 35px;   /* separación desde la parte superior */
+    right: 180px; /* separación desde la parte derecha */
+}
+
+#buy {
+    position: absolute;
+    top: 95px;   /* separación desde la parte superior */
+    right: 400px; /* separación desde la parte derecha */
+}
