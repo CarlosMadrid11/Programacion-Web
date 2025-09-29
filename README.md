@@ -15,4 +15,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Practica Gradientes clase en linea 29 sep - Hecha
 
-Actualizacion viernes 26 de Septiembre 2025 despues de hacer la practica 04
+Actualizacion viernes 29 de Septiembre 2025 antes de termianr de editar la practica 2
