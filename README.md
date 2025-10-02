@@ -13,6 +13,8 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   
   Practica 04 - Hecha
 
-  Practica Gradientes clase en linea 29 sep - Hecha
+  Practica Gradientes (clase en linea 29 sep) - Hecha
 
-Actualizacion viernes 29 de Septiembre 2025 
+  Practica css grid (clase 30 sep) - Hecha
+
+Actualizacion Miercoles 1 oct 
