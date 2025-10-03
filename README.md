@@ -17,4 +17,6 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Practica css grid (clase 30 sep) - Hecha
 
-Actualizacion Miercoles 1 oct 
+  Practica css grid (clase 2 oct) - Hecha
+
+Actualizacion Viernes 2 oct antes de la clase
