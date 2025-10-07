@@ -4,7 +4,7 @@
 ## Grupo: 12:00 - 13:00 hrs
 Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
-### Unidad 1
+## Unidad 1
   Practica 01 - Hecha 
   
   Practica 02 - Hecha
@@ -13,10 +13,17 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   
   Practica 04 - Hecha
 
+## Unidad 2
+
   Practica Gradientes (clase en linea 29 sep) - Hecha
 
   Practica css grid (clase 30 sep) - Hecha
 
   Practica css grid (clase 2 oct) - Hecha
 
-Actualizacion Viernes 2 oct antes de la clase
+  Practica del viernes 3 de oct
+
+  Practica css grid (clase 6 oct) - Falta terminarlo en clase
+
+### Ultima actualizacion
+Actualizacion lunes 6 oct despues de la clase
