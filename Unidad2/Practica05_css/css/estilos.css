@@ -5,6 +5,14 @@ body{
     margin: 0 auto;
     max-width: 723px;
 }
+.contenedor{
+    display: grid;
+    grid-template:
+    "header header"
+    "navbar navbar"
+    "links principal"
+    "lprogress principal";
+}
 .cubes{
     display: grid;
     grid-template-columns: repeat(4, minmax(140px, 1fr));
@@ -34,6 +42,7 @@ body{
 }
 .header{
     background: rgb(35,92,146);
+    grid-area: header;
     text-align: center;
     padding: 10px 0px;
 }
@@ -42,6 +51,7 @@ body{
 }
 .links{
     background: rgb(30,73,114);
+    grid-area: links;
     color: white;
     font-size: 0.6em;
     width: 150px;
@@ -61,11 +71,55 @@ body{
 }
 .navbar{
     background: rgb(239,239,239);
+    grid-area: navbar;
     text-align: right;
     padding: 10px 5px;
 }
 .navbar img{
     width: 70px;
+}
+.panels{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    gap: 5px;
+}
+.panels h4{
+    color: white;
+    font-size: 2em;
+    margin: 0px;
+    width: 100%;
+}
+.panels article{
+    font-size: 0.6em;
+
+}
+.panels01porcentaje{
+    background: rgb(188, 231, 240);
+}
+.panels02porcentaje{
+    background: rgb(250, 234, 204);
+}
+.panels03porcentaje{
+    background: rgb(235, 204, 208);
+}
+.panels article:nth-child(1){
+    border: 1px solid rgb(188, 231, 240);
+}
+.panels article:nth-child(2){
+    border: 1px solid rgb(250, 234, 204);;
+}
+.panels article:nth-child(3){
+    border: 3px solid rgb(235, 204, 208);
+}
+.panels img{
+    width: 150px;
+}
+.principal{
+    background: white;
+    grid-area: principal;
+    padding: 5px;
+
 }
 .principaltitulos{
     color: rgb(174,174,174);
@@ -73,6 +127,7 @@ body{
 }
 .progress{
     background: white;
+    grid-area: lprogress;
     color: black;
     font-size: 0.6em;
     margin-top: 10px;
@@ -91,4 +146,25 @@ body{
     margin: 0px;
     padding: 5px 0px;
     width: 100%;   
+}
+.usuarios{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: center;
+
+}
+.usuarios article{
+    background: rgb(74, 106, 174);
+    color: white;
+    padding: 10px;
+    vertical-align: top;
+}
+.usuarios input{
+    background: rgb(91,190,224);
+    border: 1px solid rgb(91,190,224);
+    color: white;
+}
+.usuarios img{
+    width: 100px;
 }
