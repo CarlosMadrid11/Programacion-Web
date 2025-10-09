@@ -23,7 +23,11 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Practica del viernes 3 de oct
 
-  Practica css grid (clase 6 oct) - Falta terminarlo en clase
+  Practica css grid (clase 6 oct) - Terminado pero salio algo mal y no me quedo una parte
+
+  Practica 05 css - Hecha
+
+  Practica 01 Flexbox - Hecha
 
 ### Ultima actualizacion
-Actualizacion lunes 6 oct despues de la clase
+Actualizacion jueves 9 oct despues de la clase
