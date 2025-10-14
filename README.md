@@ -29,5 +29,9 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Practica 01 Flexbox - Hecha
 
+  Transformaciones (clase viernes 10 oct) - Hecha
+
+  Practica 06 css (clase 14 oct) - por hacer en clase
+
 ### Ultima actualizacion
-Actualizacion jueves 9 oct despues de la clase
+Actualizacion martes 14 de oct antes de la clase
