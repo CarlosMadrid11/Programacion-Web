@@ -9,6 +9,24 @@ body{
     font-size: 16px;
     font-family: sans-serif;
     margin: 0px auto;
+    max-width: 1024px;
+}
+.copy-info{
+    align-self: flex-end;
+}
+.footer{
+    background: var(--color-negro);
+    color: var(--color-blanco);
+    display: flex;
+    height: 250px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+}
+.footer article{
+    padding: 20px 0px;
+}
+.footer img{
+    width: 40px;
 }
 .header{
     background: var(--color-negro);
@@ -36,9 +54,37 @@ body{
     padding: 5px 10px;
 }
 .help{
+    background: var(--fondo-ayuda);
     height: 200px;
-    font-size: 2em;
+    font-size: 2.5em;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
+}
+.help input{
+    font-size: 0.5em;
+    width: 400px;
+    height: 50px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    margin-top: 80px;
+}
+.main img{
+    margin-right: 10px;
+    width: 50px;
+}
+.main-info{
+    display: flex;
+    width: 350px;
+}
+.main-link{
+    color: var(--color-enlace);   
+}
+.main-titulo{
+    font-weight: bold;
 }
