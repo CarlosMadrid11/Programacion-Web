@@ -31,7 +31,7 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Transformaciones (clase viernes 10 oct) - Hecha
 
-  Practica 06 css (clase 14 oct) - por hacer en clase
+  Practica 06 css (clase 14 oct) - Hecha
 
 ### Ultima actualizacion
-Actualizacion martes 14 de oct antes de la clase
+Actualizacion Miercoles 15 de oct despues de la clase
