@@ -31,7 +31,11 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Transformaciones (clase viernes 10 oct) - Hecha
 
-  Practica 06 css (clase 14 oct) - Hecha
+  Practica 06 css flexbox (clase 14 oct) - Hecha
+
+  Practica 06 css grid (Tarea 16 oct) - Hecha
+
+  Practica 07 css - Falta ver el video
 
 ### Ultima actualizacion
-Actualizacion Miercoles 15 de oct despues de la clase
+Actualizacion jueves 16 oct despues de hacer la tarea y antes de ver el video de la clase del jueves de la practica 7
