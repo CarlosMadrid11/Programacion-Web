@@ -8,14 +8,17 @@ body{
     max-height: 500px;
     margin: 0;
     padding: 0;
-    background-color: grey;
+    background-color: rgb(234, 206, 206);
     font-family: sans-serif;
 }
 #SectionIzq{
     width: 20%;
     height: 600px;
     background-color: var(--fondo-izq);
-    border: 2px solid yellow;
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
 }
 #SectionIzq p{
     color: white;
@@ -34,8 +37,8 @@ body{
 .articleMedioIzq{
     color: var(--color-gris);
     padding: 15% 0;
-    font-size: 20px;
-    border: 2px solid blue;
+    font-size: 14px;
+    /* border: 2px solid blue; */
 }
 .articleMedioIzq .Media, .Editing, .Music{
     padding-top:  40px;
@@ -49,19 +52,24 @@ body{
     border-bottom: 2px solid var(--verde-letra);
     color: var(--verde-letra);
 }
+/* ...existing code... */
 .next {
-    background: var(--color-gris);
-    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centra el contenido (texto) dentro del círculo */
+    background: rgb(170, 159, 159);
+    border-radius: 50%;
     border: 2px solid var(--fondo-izq);
-    height: 70px;
-    width: 70px;
-   display: flex;
+    height: 90px;        /* ajustar tamaño según prefieras */
+    width: 90px;
+    margin: 20px auto;   /* centra el botón horizontalmente */
+    box-sizing: border-box;
 }
-.next p{
-  width: auto; /* Opcional: para anular un ancho forzado */
-  margin: 0;   /* Quita los márgenes predeterminados del <p> */
-  position:relative;
-  align-items: center;
-  justify-content: center;
-  
+.next div{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: var(--color-gris);
+    font-size: 22px;
+    line-height: 1;
 }
