@@ -11,6 +11,16 @@ body{
     background-color: rgb(234, 206, 206);
     font-family: sans-serif;
 }
+/* .main{ */
+    /* display: grid;
+    
+    /* 1. Define las TRES COLUMNAS con los anchos específicos */
+    /* grid-template-columns: 20% 1fr 25%; 1fr toma el 55% restante */
+     
+    /* 2. Asigna NOMBRES al layout, que corresponden a las 3 columnas */
+    /* grid-template-areas: "SectionIzq Principal SectionDer";
+} */
+
 #SectionIzq{
     width: 20%;
     height: 600px;
@@ -19,7 +29,9 @@ body{
     padding-top: 0;
     box-sizing: border-box;
     border-top: 1px solid transparent;
+    /* grid-area: SectionIzq; */
 }
+
 #SectionIzq p{
     color: white;
     font-size: 20px;
@@ -72,4 +84,42 @@ body{
     color: var(--color-gris);
     font-size: 22px;
     line-height: 1;
+}
+
+#Principal{
+    /* grid-area: Principal; */
+}
+#SectionDer{
+    /* grid-area: SectionDer; */
+    width: 25%;
+    height: 600px;
+    background-color: rgb(206, 201, 218);
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
+    /* grid-area: SectionIzq; */
+    border: 2px solid red;
+    font-size: 12px;
+    font-family: sans-serif;
+    justify-items: center;
+} 
+.nito{
+    font-weight: bold;
+}
+a{
+    font: rgb(137, 83, 164);
+    text-decoration: none;
+}
+#SectionDer article{
+    width: 80%;
+
+}
+.tips{
+    
+    text-align: left;
+}
+li{
+    text-align: left;
+    font-size: 0.81em;
 }
