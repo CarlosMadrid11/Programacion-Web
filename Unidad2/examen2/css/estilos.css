@@ -86,9 +86,7 @@ body{
     line-height: 1;
 }
 
-#Principal{
-    /* grid-area: Principal; */
-}
+
 #SectionDer{
     /* grid-area: SectionDer; */
     width: 25%;
@@ -119,7 +117,35 @@ a{
     
     text-align: left;
 }
-li{
+.tips ul li{
     text-align: left;
     font-size: 0.81em;
+}
+
+#Principal{
+    /* grid-area: Principal; */
+     width: 55%;
+    height: 600px;
+    background-color: white;
+    margin: 0;
+    padding-top: 0;
+    box-sizing: border-box;
+    border-top: 1px solid transparent;
+    /* grid-area: SectionIzq; */
+    border: 2px solid red;
+    font-size: 12px;
+    font-family: sans-serif;
+    justify-items: center;
+}
+.arriba{
+    border-bottom: 2px solid black;
+    padding-top: 40px;
+    width: 80%;
+    height: 30%;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight:600;
+}
+.arriba p{
+
 }
