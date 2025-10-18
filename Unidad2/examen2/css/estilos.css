@@ -5,31 +5,31 @@ html{
 }
 body{
     max-width: 1024px;
-    max-height: 500px;
+    max-height: 1800px;
     margin: 0;
     padding: 0;
     background-color: rgb(234, 206, 206);
     font-family: sans-serif;
 }
-/* .main{ */
-    /* display: grid;
+.main{ 
+     display: grid;
     
     /* 1. Define las TRES COLUMNAS con los anchos específicos */
-    /* grid-template-columns: 20% 1fr 25%; 1fr toma el 55% restante */
+    grid-template-columns: 20% 1fr 25%; /*1fr toma el 55% restante 
      
     /* 2. Asigna NOMBRES al layout, que corresponden a las 3 columnas */
-    /* grid-template-areas: "SectionIzq Principal SectionDer";
-} */
+    grid-template-areas: "SectionIzq Principal SectionDer";
+}
 
 #SectionIzq{
-    width: 20%;
+    
     height: 600px;
     background-color: var(--fondo-izq);
     margin: 0;
     padding-top: 0;
     box-sizing: border-box;
     border-top: 1px solid transparent;
-    /* grid-area: SectionIzq; */
+    grid-area: SectionIzq;
 }
 
 #SectionIzq p{
@@ -88,8 +88,8 @@ body{
 
 
 #SectionDer{
-    /* grid-area: SectionDer; */
-    width: 25%;
+    grid-area: SectionDer;
+    
     height: 600px;
     background-color: rgb(206, 201, 218);
     margin: 0;
@@ -123,8 +123,8 @@ a{
 }
 
 #Principal{
-    /* grid-area: Principal; */
-     width: 50%;
+    grid-area: Principal;
+     
     height: 600px;
     background-color: white;
     margin: 0;
@@ -165,4 +165,62 @@ a{
     display: block;
     object-fit: cover;    /* opcional: recorta si es necesario */
     max-width: 100%;
+}
+/* 1. Contenedor principal de la navegación */
+.filtro-navegacion {
+    display: flex; /* Usamos Flexbox para alinear la lista y la flecha */
+    align-items: center;
+    overflow-x: hidden; /* Oculta el scroll horizontal si la lista es muy larga */
+    padding: 5px 0;
+    /* Estilo del borde que envuelve todo */
+    border-radius: 8px; 
+    background-color: #fff; 
+    margin-left: 60px;
+}
+
+/* 2. Estilos de la lista (el ul) */
+.lista-filtros {
+    display: flex; /* Hacemos que los ítems se alineen horizontalmente */
+    list-style: none; /* Quitamos las viñetas por defecto */
+    padding: 0;
+    margin: 0;
+    white-space: nowrap; /* Evita que los ítems salten de línea */
+}
+
+/* 3. Estilos de los elementos de la lista (los li) */
+.lista-filtros li {
+    margin-right: 10px; /* Espacio entre cada "botón" */
+}
+
+/* 4. Estilos de los enlaces (los a), que serán los "botones" */
+.lista-filtros a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px; /* Relleno para darles forma de botón */
+    border-radius: 6px; /* Bordes redondeados */
+    background-color: #f0f0f0; /* Fondo gris claro (estado normal) */
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Necesario para que el padding y el ancho funcionen bien */
+}
+
+/* 5. Estilo para el ítem seleccionado (clase .activo) */
+.lista-filtros a.activo {
+    background-color: #6a5acd; /* Fondo morado para el activo */
+    color: white; /* Texto blanco para el activo */
+    font-weight: bold;
+}
+
+/* 6. Estilo opcional para la flecha de desplazamiento */
+.desplazar-derecha {
+    /* Estilo para que parezca el botón de flecha que se ve en tu imagen */
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    padding: 0 10px;
+    /* Lo esencial: asegura que se quede a la derecha */
+    margin-left: auto; 
 }
