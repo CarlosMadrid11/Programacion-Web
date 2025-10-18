@@ -124,7 +124,7 @@ a{
 
 #Principal{
     /* grid-area: Principal; */
-     width: 55%;
+     width: 50%;
     height: 600px;
     background-color: white;
     margin: 0;
@@ -146,6 +146,23 @@ a{
     font-size: 40px;
     font-weight:600;
 }
-.arriba p{
 
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas responsivas */
+    gap: 5px;
+    width: 90%;           /* 90% del elemento padre */
+    margin: 0 auto;       /* centra horizontalmente dentro del padre */
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+.contenedor-imagenes figure {
+    margin: 0;
+}
+#Principal .contenedor-imagenes img{
+    width: 100%;          /* ocupa toda la celda del grid */
+    height: auto;         /* mantiene proporción */
+    display: block;
+    object-fit: cover;    /* opcional: recorta si es necesario */
+    max-width: 100%;
 }
