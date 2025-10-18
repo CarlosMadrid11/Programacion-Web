@@ -38,4 +38,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   Practica 07 css - Falta ver el video
 
 ### Ultima actualizacion
-Actualizacion jueves 16 oct despues de hacer la tarea y antes de ver el video de la clase del jueves de la practica 7
+Actualizacion Viernes 17 despues de hacer el exmaen y antes de ver el video de la clase del jueves de la practica 7
