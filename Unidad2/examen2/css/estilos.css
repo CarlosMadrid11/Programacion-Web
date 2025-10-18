@@ -1,0 +1,67 @@
+html{
+    --fondo-izq: rgb(12, 12, 50);
+    --color-gris: rgb(200, 200, 200);
+    --verde-letra: rgb(79, 232, 135);
+}
+body{
+    max-width: 1024px;
+    max-height: 500px;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    font-family: sans-serif;
+}
+#SectionIzq{
+    width: 20%;
+    height: 600px;
+    background-color: var(--fondo-izq);
+    border: 2px solid yellow;
+}
+#SectionIzq p{
+    color: white;
+    font-size: 20px;
+    top: 15px;
+    left: 35px;
+    position: relative;
+}
+.logo{
+    width: 14px;
+    max-width: 14px;
+    height: 14px;
+    max-height: 14px;
+    justify-content: center;
+}
+.articleMedioIzq{
+    color: var(--color-gris);
+    padding: 15% 0;
+    font-size: 20px;
+    border: 2px solid blue;
+}
+.articleMedioIzq .Media, .Editing, .Music{
+    padding-top:  40px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    border-bottom: 2px solid var(--color-gris);
+    width: 80%;
+    
+}
+.articleMedioIzq .Editing{
+    border-bottom: 2px solid var(--verde-letra);
+    color: var(--verde-letra);
+}
+.next {
+    background: var(--color-gris);
+    border-radius: 100%;
+    border: 2px solid var(--fondo-izq);
+    height: 70px;
+    width: 70px;
+   display: flex;
+}
+.next p{
+  width: auto; /* Opcional: para anular un ancho forzado */
+  margin: 0;   /* Quita los márgenes predeterminados del <p> */
+  position:relative;
+  align-items: center;
+  justify-content: center;
+  
+}
