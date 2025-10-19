@@ -35,7 +35,9 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Practica 06 css grid (Tarea 16 oct) - Hecha
 
-  Practica 07 css - Falta ver el video
+  Practica 07 css - Hecha
+
+  Examen - Hecha
 
 ### Ultima actualizacion
-Actualizacion Viernes 17 despues de hacer el exmaen y antes de ver el video de la clase del jueves de la practica 7
+Actualizacion Viernes 17 despues de hacer el examen
