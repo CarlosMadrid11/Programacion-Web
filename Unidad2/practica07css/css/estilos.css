@@ -1,0 +1,70 @@
+html{
+    --color-azul: blue;
+}
+body{
+    font-family: sans-serif;
+    margin: 0px auto;
+    padding: 0px;
+}
+header{
+    grid-area: header;
+    /* background-color: aqua; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    font-size: 18px;
+    margin: 10px;
+}
+header ul li:hover{
+    color: var(--color-azul);
+    border-bottom: 2px solid var(--color-azul);
+}
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar fotos";
+}
+.fotos{
+    grid-area: fotos;
+    /* background: brown; */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+}
+.fotos img{
+    height: auto;
+    width: 100%;
+}
+.sidebar{
+    grid-area: sidebar;
+    /* background: khaki; */
+}
+.sidebar ul{
+    margin: 0px;
+    padding: 0px 60px;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+}
+.sidebar ul li{
+    font-size: 25px;
+    margin: 5px;
+    padding: 15px;
+    width: 100%;
+}
+.sidebar ul li:hover{
+    border-left: 5px solid var(--color-azul);
+    color: var(--color-azul);
+}
