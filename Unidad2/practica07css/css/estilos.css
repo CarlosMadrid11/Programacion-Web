@@ -14,7 +14,13 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+header h1{
+    flex-grow: 1;
+    margin: 30px;
+    text-align: center;
+}
 header ul{
+    flex-grow: 1;
     margin: 20px;
     list-style: none;
     display: flex;
@@ -28,6 +34,19 @@ header ul li{
 header ul li:hover{
     color: var(--color-azul);
     border-bottom: 2px solid var(--color-azul);
+}
+footer{
+    position: fixed;
+    border-top: 1px solid #CCC;
+    bottom: 0px;
+    left: 0px;
+    padding: 5px 0px;
+    text-align: center;
+    width: 100%;
+}
+.columna{
+    flex: 25%;
+    max-width: 25%;
 }
 .contenedor{
     display: grid;
@@ -67,4 +86,24 @@ header ul li:hover{
 .sidebar ul li:hover{
     border-left: 5px solid var(--color-azul);
     color: var(--color-azul);
+}
+@media only screen and (width <= 700px) {
+    .columna{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .contenedor{
+        grid-template-areas:
+        "header"
+        "sidebar"
+        "fotos";
+    }
+    .sidebar ul{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .sidebar ul li:hover{
+        border: none;
+        border-bottom: 5px solid var(--color-azul);
+    }
 }
