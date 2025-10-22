@@ -43,5 +43,7 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   Frameworks (clase 20 oct) - Hecha 
 
+  JavaScript (clase 22 oct) - Hecha
+
 ### Ultima actualizacion
-Actualizacion lunes 20 oct despues de clase
+Actualizacion lunes 22 oct despues de clase
