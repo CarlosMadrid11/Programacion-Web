@@ -73,9 +73,9 @@ console.log(variablefuncion());
 
 const saludo = "iHola";
 function externa() {
-const persona = ' Martin ';
+const persona = ' Carlos ';
         function interna() {
-        const fin = 'Nevarez!'
+        const fin = 'Madrid!'
         return saludo+persona+fin;
         }
     return interna;
@@ -85,7 +85,7 @@ const clousure = externa();
 console.log(clousure());
 
 //Otro ejemplo
-const miContador = function(){
+const miContador = (function(){
     let contador = 0;
     function incrementar(){
         return ++contador;
@@ -96,6 +96,51 @@ const miContador = function(){
      function valor(){
         return contador;
     }
+    return{
+        incrementar,
+        decremenar, 
+        valor
+    }
+})() // <--- ejecutar la funcion principal
+console.log(miContador());
+miContador.incrementar();
+miContador.incrementar();
+miContador.incrementar();
+miContador.incrementar();
+miContador.decremenar();
+console.log(miContado.valor());
+
+//Promesas
+//Paginas dinamicas <acceso a datos (internos, externos)
+//Kb <---externas, internas ---> MB o GB
+
+let datos = [
+    {
+    id: 1,
+    materia:'PW',
+    semestre: 6
+    },
+    {
+    id: 2,
+    materia:'POO',
+    semestre: 1
+    },
+    {
+    id: 3,
+    materia:'Estructura de datos',
+    semestre: 2
+    },
+]
+// console.log(datos);
+const obtenerDatos = () => {
+    return new Promise ((resolve, reject) => {
+        if(datos.length === 0){
+            reject(new Error("Datos está vacío"));
+        }
+        setTimeout(() => {
+        resolve(datos);
+    }, 1500); 
+    })
+    
 }
-console.log(miContador());
-console.log(miContador());
+console.log(obtenerDatos());
