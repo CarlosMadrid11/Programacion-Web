@@ -46,4 +46,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   JavaScript (clase 22 oct) - Hecha
 
 ### Ultima actualizacion
-Actualizacion lunes 22 oct despues de clase
+Actualizacion lunes 27 de oct despues de la clase, faltan las clases del jueves y viernes
