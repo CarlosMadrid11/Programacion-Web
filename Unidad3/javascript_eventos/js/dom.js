@@ -33,5 +33,5 @@ let boton=document.querySelector("button");
 muestraMensaje = (mensaje) =>{
     alert(mensaje);
 }
-boton.addEventListener("click",muestraMensaje.bind(null,"Aquí"))
+boton.addEventListener("click",muestraMensaje.bind(null ,"Aquí"))
 

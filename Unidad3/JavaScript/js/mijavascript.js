@@ -65,8 +65,118 @@
 // console.log(Object.values(objeto));
 // console.log(Object.entries(objeto));
 
+let variable = "valor";
+const constante = "VALOR"
+function miFuncion(a = 2){//le asignas un valor por defecto
+    return 2*a;
+}
+console.log(miFuncion(6));
+
+const functionFlecha = (a = 4) => {
+    return 2*a;
+}
+console.log(functionFlecha(10));
+
+// Destructuring - destrucurar
+// Objetos
+const usuarios = {
+    nombre: "Carlos",
+    apellido: "Madrid"
+}
+// let nombre=usuarios.nombre;
+// let apellido=usuarios.apellido;
+const { nombre, apellido } = usuarios;
+console.log("Actualizado nombre "+nombre+" "+apellido);
+// Otro objeto
+const usuario2 = {
+    nombre: "Carlos",
+    apellido: "Madrid",
+    redes: {
+            sociales: {
+                twx: "@miusuario",
+                face: "@miface"
+            }
+    }
+}
+// const face = usuario2.redes.sociales.face;
+const { twx,face } = usuario2.redes.sociales;
+console.log(twx+" "+face);
+
+
+//Arreglos
+const arregloNombres=['Juan','Ernesto','Omar'];
+// let nombre1 = arregloNombres[0];
+// let nombre3 = arregloNombres[2];
+const [nombre1,,nombre3] = arregloNombres; // Como no queremos cachar el nombre 2 del arreglo ponemos ,, 
+console.log(nombre1+" "+nombre3);
+
+//Combinaciones 
+// Objetos
+
+const usuarios3 = {
+    direccion: "conocida",
+    numerocasa: "300"
+}
+// Propagacion de objetos
+const NuevoObjeto = {...usuario2,...usuarios3};
+console.log(NuevoObjeto);
+
+//Arreglos
+const ArregloApellidos = ['Perez','Lopez','Gomez'];
+const NuevoArreglo = [...arregloNombres,...ArregloApellidos]; // con propagacion
+console.log(NuevoArreglo);
+const OtroNuevoArreglo = arregloNombres.concat(ArregloApellidos); // con concatenacion
+console.log(OtroNuevoArreglo);
+
+
+//foreach, for, map, reduce <--- iterar arreglos
+for(let i=0;i<NuevoArreglo.length;i++){
+    console.log(NuevoArreglo[i])
+}NuevoArreglo.forEach(function(nombre) {
+    console.log(nombre)
+})
+let numeros = [1,2,3,4,5];
+let suma = 0;
+numeros.forEach(function(numero) {
+    suma += numero;
+})
+console.log(suma);
+
+
+//Map
+let precios=[10,20,30,40,50];
+const conversion = 0.85;
+let preciosnuevos=precios.map(function(precio){
+return precio * conversion;
+});
+
+console.log(preciosnuevos);
+//Reduce
+let sumaPrecios = precios.reduce(function(suma){
+    return suma *= precios;
+},0);
+console.log(sumaPrecios);
+ 
+//Clases
+class Animal{
+constructor(nombre){
+this.nombre = nombre;
+    }
+    habla(){
+            console.log('Este ${this.nombre} hace ruido');
+        }
+    }
+class Perro extends Animal{
+    habla(){
+    console.log(`Mi perro ${this.nombre} ladra`);
+    }
+}
+const perro = new Perro('Hunter');
+perro.habla();
+
+// Clase viernes
 //clousures
-const variablefuncion = function(){
+/*const variabl efuncion = function(){
     return "¡Hola!";
 }
 console.log(variablefuncion());
@@ -144,3 +254,4 @@ const obtenerDatos = () => {
     
 }
 console.log(obtenerDatos());
+*/
