@@ -23,7 +23,7 @@ elemento.addEventListener("keydown",(e) => {
 //Arrastrar y soltar
 let arrastra=document.querySelector("#arrastra");
 let zonasoltar=document.getElementById("zonasoltar");
-
+let texto=document.querySelector(".texto")
 arrastra.addEventListener("dragstart",function(e){
     this.style.border="5px solid red";
 });
@@ -36,5 +36,18 @@ zonasoltar.addEventListener("dragover",function(e){
 });
 zonasoltar.addEventListener("drop", function(e){
     arrastra.style.border="none";
+    this.textContent.style.display="none";
+    this.append(arrastra);
+});
+
+zonainicial.addEventListener("dragover",function(e){
+    //zonasoltar olvida que no se pueden
+    //arrastrar elementos sobre el
+    event.preventDefault();
+
+});
+zonainicial.addEventListener("drop", function(e){
+    arrastra.style.border="none";
+    this.textContent.style.display="none";
     this.append(arrastra);
 });
