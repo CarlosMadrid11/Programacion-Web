@@ -50,4 +50,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   fetch_api_06 (clase 30 oct) - Hecha
 
 ### Ultima actualizacion
-Actualizacion jueves 30 de oct despues de la clase, falta una parte de la clase del viernes
+Actualizacion viernes 31 de oct antes de la clase del viernes (video en yt).

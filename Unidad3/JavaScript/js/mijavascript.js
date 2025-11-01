@@ -65,6 +65,7 @@
 // console.log(Object.values(objeto));
 // console.log(Object.entries(objeto));
 
+/*
 let variable = "valor";
 const constante = "VALOR"
 function miFuncion(a = 2){//le asignas un valor por defecto
@@ -174,6 +175,7 @@ class Perro extends Animal{
 const perro = new Perro('Hunter');
 perro.habla();
 
+*/
 // Clase viernes
 //clousures
 /*const variabl efuncion = function(){
@@ -220,9 +222,12 @@ miContador.incrementar();
 miContador.decremenar();
 console.log(miContado.valor());
 
+*/
 //Promesas
 //Paginas dinamicas <acceso a datos (internos, externos)
 //Kb <---externas, internas ---> MB o GB
+
+
 
 let datos = [
     {
@@ -242,6 +247,8 @@ let datos = [
     },
 ]
 // console.log(datos);
+
+//Funcion que simula obtener datos desde un servidor remoto
 const obtenerDatos = () => {
     return new Promise ((resolve, reject) => {
         if(datos.length === 0){
@@ -251,7 +258,17 @@ const obtenerDatos = () => {
         resolve(datos);
     }, 1500); 
     })
-    
 }
-console.log(obtenerDatos());
-*/
+
+//Funcion asincrona y esta debe esperar a terminar de obtener la informacion
+async function procesarDatos(){
+    try{
+        const misdatos = await obtenerDatos();
+        console.log(misdatos);
+    }catch(err){
+        console.log(err.message);
+    }
+}
+procesarDatos();
+// console.log(obtenerDatos());
+
