@@ -47,7 +47,7 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   JavaScript_eventos (clase 27 y 28 oct) - Hecha
 
-  fetch_api_06 (clase 30 oct) - Hecha
+  fetch_api_06 (clase 30 y 31 oct) - Hecha
 
 ### Ultima actualizacion
-Actualizacion viernes 31 de oct antes de la clase del viernes (video en yt).
+Actualizacion Lunes 3 de nov antes de la clase

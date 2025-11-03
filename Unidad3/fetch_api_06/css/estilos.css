@@ -1,3 +1,7 @@
+html{
+    /* para que no tome en cuenta los bordes extra */
+    box-sizing: border-box;
+}
 body{
     background-color: bisque;
     font-family: sans-serif;
@@ -5,6 +9,16 @@ body{
     margin: 0px auto;
     width: 1024px;
 }
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.listapersonas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}    
 button{
     background-color: green;
     border: none;
@@ -13,15 +27,16 @@ button{
 }
 .tarjeta{
     border: 2px dashed gray;
+    border-radius: 10px;
     display: flex;
     flex-flow: column wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
     margin: 0px auto;
-    margin-top: 20px;
-    padding: 20px;
-    width: 350px;
+    margin-top: 40px;
+    padding: 0px;
+    width: 200px ;
 }
 #direccion, #telefono{
     background-color: lightgray;
