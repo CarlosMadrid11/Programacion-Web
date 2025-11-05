@@ -1,4 +1,4 @@
-const multiplicar = (a,b,impimir) => {
+const multiplicar = (a:number,b:number,imprimir:string) => {
     console.log(imprimir,a*b);
 }
 
