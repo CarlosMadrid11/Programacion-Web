@@ -1,0 +1,7 @@
+let mensaje:string = "Hola Javascript";
+console.log(mensaje);
+console.log(typeof(mensaje));
+
+mensaje= 2;
+mensaje.log(mensaje);
+console.log(typeof(mensaje));
