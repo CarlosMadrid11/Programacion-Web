@@ -49,7 +49,7 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   fetch_api_06 (clase 30 y 31 oct) - Hecha
 
-  TYPESCRIPT (clase 3 nov)s
+  TYPESCRIPT (clase 3-6 nov)
 
 ### Ultima actualizacion
-Actualizacion Lunes 3 de nov antes de la clase
+Actualizacion vierens 7 de nov antes de la clase
