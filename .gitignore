@@ -1,2 +1,5 @@
 # Archivos específicos a ignorar
 .DS_Store
+
+# Dependencias de Node.js
+node_modules/

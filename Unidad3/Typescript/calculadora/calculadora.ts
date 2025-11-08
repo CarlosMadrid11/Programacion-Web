@@ -1,4 +1,4 @@
-const operaciones= ['suma', 'resta', 'multiplicacion', 'division'];
+// const operaciones= ['suma', 'resta', 'multiplicacion', 'division'];
 type Operaciones = 'suma' | 'resta' | 'multiplicacion' | 'division';
 type Resultados = number | string;
 
@@ -19,7 +19,7 @@ const calculadora = (a:number, b:number, operacion: Operaciones): number  => {
         if (b==0){
             throw new Error ("No se puede dividir entre cero");
             //return "No se puede dividir entre 0";
-        }
+        }  
         return a/b;
     }
     //return "Operación no válida";
@@ -30,4 +30,4 @@ console.log(calculadora (1, 3, "resta"));
 console.log(calculadora (1, 3, "multiplicacion"));
 console.log(calculadora (1, 3, "division"));
 console.log(calculadora (1, 0, "division"));
-//console.log(calculadora (1, 3, "sumaste"));
+//console.log(calculadora (1, 3, "sumaste")); 

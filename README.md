@@ -52,4 +52,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   TYPESCRIPT (clase 3-6 nov)
 
 ### Ultima actualizacion
-Actualizacion vierens 7 de nov antes de la clase
+Actualizacion viernes 7 de nov
