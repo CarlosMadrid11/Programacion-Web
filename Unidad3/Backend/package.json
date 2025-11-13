@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "dev": "concurrently \"tsc -w\" \"nodemon build/index.js\"",
+    "dev": "concurrently \"tsc -w\" \nodemon build/index.js\"",
     "start": "node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
