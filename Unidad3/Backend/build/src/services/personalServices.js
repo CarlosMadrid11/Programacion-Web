@@ -23,3 +23,12 @@ export const encuentraPersonal = async (id) => {
         return { error: "No se puede obtener la personal" };
     }
 };
+export const agregarPersonal = async (nuevo) => {
+    try {
+        const [results] = await conexion.query('INSERT INTO personal (nombre,direccion,telefono,estatus) VALUES (?,?,?,?)', [nuevo.nombre, nuevo.direccion, nuevo.telefono, nuevo.estatus]);
+        return results;
+    }
+    catch (error) {
+        return { error: "No se puede agregar el personal" };
+    }
+};

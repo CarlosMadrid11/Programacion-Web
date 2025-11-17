@@ -1,3 +1,4 @@
+import type { Personal, PersonalNuevo } from '../../typesPersonal.js';
 import mysql from 'mysql2/promise';
 
 const conexion = mysql.createPool({
@@ -16,3 +17,20 @@ export const obtienePersonal = async () => {
     }
 }
 
+export const encuentraPersonal = async (id:number) => {
+    try {
+        const [results] = await conexion.query('SELECT * FROM personal where id = ? LIMIT 1 ', [id]);
+        return results;
+    } catch (error) {
+        return {error: "No se puede obtener la personal"}
+    }
+}
+
+export const agregarPersonal = async (nuevo:PersonalNuevo) =>{
+    try {
+        const [results] = await conexion.query('INSERT INTO personal (nombre,direccion,telefono,estatus) VALUES (?,?,?,?)', [nuevo.nombre,nuevo.direccion,nuevo.telefono,nuevo.estatus]);
+        return results;
+    } catch (error) {
+        return {error: "No se puede agregar el personal"}
+    }
+}
