@@ -1,3 +1,4 @@
+// import type { Personal, PersonalNuevo } from '../../typesPersonal.js';
 import mysql from 'mysql2/promise';
 const conexion = mysql.createPool({
     host: 'localhost',
