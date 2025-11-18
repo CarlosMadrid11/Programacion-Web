@@ -50,7 +50,7 @@ router.delete('/:id', async (req: Request,res: Response) =>{
     try {
         const {id} = req.body;
         const eliminado = await personalServices.borrarPersonal(Number(id));
-        res.send
+        res.send(eliminado);
     } catch (e) {
         res.status(400).send("Error en los datos");
     }
