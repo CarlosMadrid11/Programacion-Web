@@ -51,7 +51,7 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
 
   TYPESCRIPT (clase 3-6 nov) - Hecha
   
-  Backend (clase 10-20 nov) - En proceso
+  Backend (clase 10-24 nov) - En proceso
 
 ### Ultima actualizacion
-Actualizacion jueves 20 de nov despues de la clase 
+Actualizacion lunes 24 de nov despues de la clase 
