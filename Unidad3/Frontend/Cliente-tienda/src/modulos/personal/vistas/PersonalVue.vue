@@ -3,7 +3,7 @@
         <h3></h3>
         <h3>Personal</h3>
         <div>
-            <button class="btn btn-sm btn-outline-primary">
+            <button class="btn btn-sm btn-outline-primary">Agregar
             </button>
         </div>
     </section>
@@ -16,13 +16,26 @@
             <th>Estatus</th>
         </thead>
         <tbody>
-            
+            <tr v-for="(persona,index) in personal" :key="index">
+                <td>{{ persona.id }}</td>
+                <td>{{ persona.nombre }}</td>
+                <td>{{ persona.direccion }}</td>
+                <td>{{ persona.telefono }}</td>
+                <td>{{ persona.estatus }}</td>
+            </tr>
         </tbody>
     </table>
 </template>
 
 <script setup lang="ts">
-
+    import { onMounted } from 'vue';
+    import { usePersonal } from '../controladores/usePersonal';
+    const { traePersonal, personal } = usePersonal();
+    //Una vez que la pagina se monte (dibuje) en pantalla o
+    //Cuando se cargue el DOM en pantalla
+    onMounted( async () => {
+        await traePersonal();
+    })
 </script>
 
 <style scoped>

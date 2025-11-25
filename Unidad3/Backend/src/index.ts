@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 //Creamos la aplicación a través del paquete express
 //y llamamos a su constructor
 const app = express();
@@ -7,6 +8,7 @@ import personalRutas from './routes/personalRutas.js';
 
 //Todo lo que regresa al usuario es tipo JSON
 app.use(express.json());
+app.use(cors()); //Permitir al frontend conectarse
 //Puerto para escuchar la petición del frontend
 const PUERTO = 3001;
 // Activar la ruta base

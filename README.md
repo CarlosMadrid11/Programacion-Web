@@ -54,4 +54,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   Backend (clase 10-24 nov) - En proceso
 
 ### Ultima actualizacion
-Actualizacion lunes 24 de nov despues de la clase 
+Actualizacion martes 25 de nov despues de la clase 
