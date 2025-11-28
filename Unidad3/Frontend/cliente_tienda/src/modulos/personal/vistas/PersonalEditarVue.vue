@@ -36,7 +36,7 @@
 
 <script setup lang="ts">
     import { onMounted, ref } from "vue";
-    import { useRouter } from "vue-router"
+    import { useRoute } from "vue-router"
     import type { PersonalAgregar } from "../interfaces/personal-interface";
     import { usePersonal } from "../controladores/usePersonal";
     const { traePersonaID,mensaje,personal } = usePersonal();
