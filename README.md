@@ -53,5 +53,8 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   
   Backend (clase 10-24 nov) - En proceso
 
+
+  Checar tsconfig.app.json
+
 ### Ultima actualizacion
 Actualizacion martes 25 de nov despues de la clase 
