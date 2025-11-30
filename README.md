@@ -57,4 +57,4 @@ Repositorio de github para la materia de Progrmacion web 12:00 - 13:00 hrs
   Checar tsconfig.app.json
 
 ### Ultima actualizacion
-Actualizacion martes 25 de nov despues de la clase 
+Actualizacion falta la clase del viernes  
