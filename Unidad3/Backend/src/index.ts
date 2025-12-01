@@ -3,24 +3,26 @@ import cors from 'cors';
 //Creamos la aplicación a través del paquete express
 //y llamamos a su constructor
 const app = express();
-// Configurar rutas para el acceso a personal 
+//Configurar rutas para el acceso a personal
 import personalRutas from './routes/personalRutas.js';
-
 //Todo lo que regresa al usuario es tipo JSON
 app.use(express.json());
 app.use(cors()); //Permitir al frontend conectarse
 //Puerto para escuchar la petición del frontend
 const PUERTO = 3001;
-// Activar la ruta base
-app.use('/api/personal', personalRutas);
+
+//Activar la ruta base
+app.use('/api/personal',personalRutas);
 
 //Ruta
-// app.get('/hola', (_req, res) =>{
-//     let fecha = new Date().toLocaleDateString();
-//     res.send('mundo con la fecha '+fecha+" con TypeScript");
+// app.get('/',(_req,res) =>{
+//     res.send("Ruta raíz del servidor API");
+// })
+// app.get('/hola',(_req,res) =>{
+//     res.send("Ruta hola del servidor API");
 // })
 
 //Encendemos el servidor y lo ponemos en escucha
-app.listen(PUERTO, () =>{
-    console.log(`Servidor en ejecución y escuchando en el puerto ${PUERTO}`);
+app.listen(PUERTO,() =>{
+    console.log(`Servidor encendido y escuchando en el puerto ${PUERTO}`)
 })

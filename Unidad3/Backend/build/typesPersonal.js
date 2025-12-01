@@ -1,7 +1,7 @@
 export {};
-// export interface PersonalNuevo {
+// export interface PersonalNuevo{
 //     nombre: string,
 //     direccion: string,
 //     telefono: string,
-//     estatus: string
+//     estatus: string,
 // }
